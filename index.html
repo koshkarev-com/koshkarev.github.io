@@ -45,7 +45,7 @@
             }
 
             img {
-                max-width: 100%;
+                max-width: 100% !important;
             }
 
             h2 {
@@ -71,7 +71,7 @@
                 right: 0;
                 padding-top: 2rem;
                 user-select: none;
-                z-index: 10;
+                z-index: 30;
                 background: linear-gradient(to bottom, #020202, transparent);
             }
 
@@ -114,6 +114,7 @@
 
             .lum-lightbox {
                 z-index: 20;
+                background: rgba(0, 0, 0, .8);
             }
 
             .footer {
@@ -124,7 +125,7 @@
                 right: 0;
                 padding: 0 20px 2rem;
                 user-select: none;
-                z-index: 10;
+                z-index: 30;
                 display: flex;
                 justify-content: space-between;
             }
@@ -599,7 +600,7 @@
                 }).mount();
             });
 
-            new LuminousGallery(document.querySelectorAll(".gallery"));
+            new LuminousGallery(document.querySelectorAll(".gallery"), null, {showCloseButton: false});
         </script>
     </body>
 </html>
