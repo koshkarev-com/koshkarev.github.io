@@ -554,7 +554,6 @@
                 macys.push(
                     Macy({
                         container: `.masonry${i}`,
-                        useOwnImageLoader: true,
                         margin: {
                             x: 30,
                             y: 30,
@@ -573,7 +572,6 @@
                 macys.push(
                     Macy({
                         container: `.masonry${i}`,
-                        useOwnImageLoader: true,
                         columns: 2,
                         margin: {
                             x: 50,
@@ -588,13 +586,6 @@
                     })
                 );
             }
-
-            const observer = lozad(".lozad", {
-                loaded: (el) => {
-                    for (let m of macys) m.recalculate(true);
-                },
-            });
-            observer.observe();
 
             const viewers = $$(".compare");
 
