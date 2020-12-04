@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+        <title>Koshkarev</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/combine/npm/luminous-lightbox@2.3.3/dist/luminous-basic.min.css,npm/normalize.css@8.0.1,npm/image-compare-viewer@1.4.1/dist/image-compare-viewer.min.css"
+        />
+        <style>
+            * {
+                text-rendering: optimizelegibility;
+            }
+
+            *,
+            ::before,
+            ::after {
+                box-sizing: inherit;
+            }
+
+            html {
+                box-sizing: border-box;
+                font-size: 62.5%;
+            }
+
+            body {
+                background: #020202;
+                color: #fff;
+                font: 16px/1.6 "Montserrat", sans-serif;
+            }
+
+            body::-webkit-scrollbar {
+                display: none;
+            }
+
+            html {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            h2 {
+                font-size: 3.2rem;
+                font-weight: 300;
+                margin: 0;
+            }
+
+            p {
+                font-size: 1.6rem;
+                margin-top: 0rem;
+                margin-bottom: 3rem;
+            }
+
+            .logo {
+                font-size: 2.8rem;
+                text-align: center;
+                font-weight: 800;
+                letter-spacing: 1px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding-top: 2rem;
+                user-select: none;
+                z-index: 10;
+                background: linear-gradient(to bottom, #020202, transparent);
+            }
+
+            .container {
+                padding: 64px 20px 0;
+            }
+
+            .item {
+                text-align: center;
+            }
+
+            .item img {
+                cursor: pointer;
+            }
+
+            .hvr-grow {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+            }
+
+            .hvr-grow:hover,
+            .hvr-grow:focus,
+            .hvr-grow:active {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+            .icv__label {
+                font-size: 1.4rem;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+
+            .lum-lightbox {
+                z-index: 20;
+            }
+
+            .footer {
+                font-size: 1.2rem;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 0 20px 2rem;
+                user-select: none;
+                z-index: 10;
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="logo">KOSHKAREV</div>
+        <div class="container">
+            <hr />
+            <h2>Собственные MLO интерьеры.</h2>
+            <p>Небольшая раздевалка для рабочих.</p>
+            <div class="masonry1">
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/cloakroom/1.jpg">
+                        <img class="lozad" data-src="my/cloakroom/1.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/cloakroom/2.jpg">
+                        <img class="lozad" data-src="my/cloakroom/2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/cloakroom/3.jpg">
+                        <img class="lozad" data-src="my/cloakroom/3.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <hr />
+            <p>
+                Тюрьма-карцер. Необходимо было расширить пространство для геймплея уже существующей тюрьмы. Каждая
+                групповая камера имеет уникальный вид. В некоторых одиночках имеются пасхалки для игроков.
+            </p>
+            <div class="masonry2">
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/18.jpg">
+                        <img class="lozad" data-src="my/jail/18.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/7.jpg">
+                        <img class="lozad" data-src="my/jail/7.jpg" alt="" />
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/1.jpg">
+                        <img class="lozad" data-src="my/jail/1.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/2.jpg">
+                        <img class="lozad" data-src="my/jail/2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/16.jpg">
+                        <img class="lozad" data-src="my/jail/16.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/14.jpg">
+                        <img class="lozad" data-src="my/jail/14.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/3.jpg">
+                        <img class="lozad" data-src="my/jail/3.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/4.jpg">
+                        <img class="lozad" data-src="my/jail/4.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/15.jpg">
+                        <img class="lozad" data-src="my/jail/15.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/5.jpg">
+                        <img class="lozad" data-src="my/jail/5.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/17.jpg">
+                        <img class="lozad" data-src="my/jail/17.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/6.jpg">
+                        <img class="lozad" data-src="my/jail/6.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/9.jpg">
+                        <img class="lozad" data-src="my/jail/9.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/12.jpg">
+                        <img class="lozad" data-src="my/jail/12.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/10.jpg">
+                        <img class="lozad" data-src="my/jail/10.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/13.jpg">
+                        <img class="lozad" data-src="my/jail/13.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/11.jpg">
+                        <img class="lozad" data-src="my/jail/11.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/jail/8.jpg">
+                        <img class="lozad" data-src="my/jail/8.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <hr />
+            <h2>Обновление интерьеров.</h2>
+            <p>
+                Интерьер ресторана не был сопоставлен с координатами здания. Было множество проблем с коллизией и
+                светом. Отсутствовали настройки шейдеров и были некачественные текстуры.
+            </p>
+            <div class="masonry6">
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="restaurant/1-2.jpg" alt="" />
+                        <img class="lozad" data-src="restaurant/1-1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="restaurant/2-2.jpg" alt="" />
+                        <img class="lozad" data-src="restaurant/2-1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="restaurant/3-2.jpg" alt="" />
+                        <img class="lozad" data-src="restaurant/3-1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <p>Интерьер был пустоват. Были небольшие проблемы с освещением. Заказчику не нравился внешний вид стен.</p>
+            <div class="masonry7">
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="jail/1-2.jpg" alt="" />
+                        <img class="lozad" data-src="jail/1-1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="jail/2-2.jpg" alt="" />
+                        <img class="lozad" data-src="jail/2-1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="jail/3-2.jpg" alt="" />
+                        <img class="lozad" data-src="jail/3-1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <p>
+                Были огромные проблемы с освещением и коллизией. Удалось оптимизировать fps внутри помещения с 30 до 50.
+                Также были дополнены и изменены 3 этажа здания в соответствии со стилистикой автора.
+            </p>
+            <div class="masonry8">
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="gov/1-2.jpg" alt="" />
+                        <img class="lozad" data-src="gov/1-1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="gov/2-2.jpg" alt="" />
+                        <img class="lozad" data-src="gov/2-1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="gov/3-2.jpg" alt="" />
+                        <img class="lozad" data-src="gov/3-1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="gov/4-2.jpg" alt="" />
+                        <img class="lozad" data-src="gov/4-1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="gov/5-2.jpg" alt="" />
+                        <img class="lozad" data-src="gov/5-1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <p>
+                Заказчику не нравился внешний и внутренний вид. Также были проблемы с текстурами, они были заменены на
+                бесшовные. Исправлена проблема с временным циклом интерьера.
+            </p>
+            <div class="masonry9">
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="center/1-2.jpg" alt="" />
+                        <img class="lozad" data-src="center/1-1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare">
+                        <img class="lozad" data-src="center/2-2.jpg" alt="" />
+                        <img class="lozad" data-src="center/2-1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <p>Дополнительные детали.</p>
+            <div class="masonry4">
+                <div class="item">
+                    <a class="gallery hvr-grow" href="mapping/1.jpg">
+                        <img class="lozad" data-src="mapping/1.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="mapping/2.jpg">
+                        <img class="lozad" data-src="mapping/2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="mapping/3.jpg">
+                        <img class="lozad" data-src="mapping/3.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="mapping/4.jpg">
+                        <img class="lozad" data-src="mapping/4.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <hr />
+            <h2>Работы не связанные с GTA5</h2>
+            <p></p>
+            <div class="masonry3">
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/armor.jpg">
+                        <img class="lozad" data-src="my/renders/armor.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/bb-8.png">
+                        <img class="lozad" data-src="my/renders/bb-8.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/gas_station.png">
+                        <img class="lozad" data-src="my/renders/gas_station.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/house.png">
+                        <img class="lozad" data-src="my/renders/house.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/jeep_1.png">
+                        <img class="lozad" data-src="my/renders/jeep_1.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/knife_v1_2.jpg">
+                        <img class="lozad" data-src="my/renders/knife_v1_2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/knife_v3.jpg">
+                        <img class="lozad" data-src="my/renders/knife_v3.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/new_motorbike.png">
+                        <img class="lozad" data-src="my/renders/new_motorbike.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/sawed_off1.png">
+                        <img class="lozad" data-src="my/renders/sawed_off1.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/sawed_off2.png">
+                        <img class="lozad" data-src="my/renders/sawed_off2.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/shield_1.jpg">
+                        <img class="lozad" data-src="my/renders/shield_1.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/shield_2.jpg">
+                        <img class="lozad" data-src="my/renders/shield_2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/electric_station_v1_NEW.png">
+                        <img class="lozad" data-src="my/renders/electric_station_v1_NEW.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/electric_station_v2.png">
+                        <img class="lozad" data-src="my/renders/electric_station_v2.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="my/renders/star_destroyer.png">
+                        <img class="lozad" data-src="my/renders/star_destroyer.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <hr />
+
+            <h2>Work in progress</h2>
+            <p></p>
+            <div class="masonry5">
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/1000.png">
+                        <img class="lozad" data-src="wip/1000.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/knife_v4.jpg">
+                        <img class="lozad" data-src="wip/knife_v4.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/bunker1.png">
+                        <img class="lozad" data-src="wip/bunker1.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/bunker2.png">
+                        <img class="lozad" data-src="wip/bunker2.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/bunker3.png">
+                        <img class="lozad" data-src="wip/bunker3.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/bunker4.png">
+                        <img class="lozad" data-src="wip/bunker4.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/bunker5.png">
+                        <img class="lozad" data-src="wip/bunker5.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/bunker6.png">
+                        <img class="lozad" data-src="wip/bunker6.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/bunker7.png">
+                        <img class="lozad" data-src="wip/bunker7.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/restaurant1.png">
+                        <img class="lozad" data-src="wip/restaurant1.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/restaurant2.png">
+                        <img class="lozad" data-src="wip/restaurant2.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/restaurant3.png">
+                        <img class="lozad" data-src="wip/restaurant3.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/restaurant4.png">
+                        <img class="lozad" data-src="wip/restaurant4.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/restaurant5.png">
+                        <img class="lozad" data-src="wip/restaurant5.png" alt="" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="gallery hvr-grow" href="wip/restaurant6.png">
+                        <img class="lozad" data-src="wip/restaurant6.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copy">&copy; 2020 Koshkarev</div>
+            <!-- <div class="links">Ссылки на соц сети</div> -->
+        </div>
+        <script src="https://cdn.jsdelivr.net/combine/npm/lozad@1.16.0,npm/macy@2.5.1,npm/luminous-lightbox@2.3.3/dist/Luminous.min.js,npm/image-compare-viewer@1.4.1/dist/image-compare-viewer.min.js"></script>
+        <script>
+            const $ = (selector, scope) => (scope || document).querySelector(selector);
+            const $$ = (selector, scope) => (scope || document).querySelectorAll(selector);
+
+            const macys = [];
+
+            for (let i = 1; i < 6; i++) {
+                macys.push(
+                    Macy({
+                        container: `.masonry${i}`,
+                        useOwnImageLoader: true,
+                        margin: {
+                            x: 30,
+                            y: 30,
+                        },
+                        breakAt: {
+                            1200: 5,
+                            940: 3,
+                            520: 2,
+                            400: 1,
+                        },
+                    })
+                );
+            }
+
+            for (let i = 6; i < 10; i++) {
+                macys.push(
+                    Macy({
+                        container: `.masonry${i}`,
+                        useOwnImageLoader: true,
+                        columns: 2,
+                        margin: {
+                            x: 50,
+                            y: 30,
+                        },
+                        breakAt: {
+                            1200: 2,
+                            940: 2,
+                            520: 2,
+                            400: 1,
+                        },
+                    })
+                );
+            }
+
+            const observer = lozad(".lozad", {
+                loaded: (el) => {
+                    for (let m of macys) m.recalculate(true);
+                },
+            });
+            observer.observe();
+
+            const viewers = $$(".compare");
+
+            viewers.forEach((element) => {
+                let view = new ImageCompare(element, {
+                    showLabels: true,
+                    labelOptions: {
+                        before: "Было",
+                        after: "Стало",
+                    },
+                }).mount();
+            });
+
+            new LuminousGallery(document.querySelectorAll(".gallery"));
+        </script>
+    </body>
+</html>
