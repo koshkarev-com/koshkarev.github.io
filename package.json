@@ -1,0 +1,21 @@
+{
+    "name": "koshkarev",
+    "version": "2022.5.17",
+    "license": "UNLICENSED",
+    "scripts": {
+        "fmt": "prettier --write .",
+        "dev": "esbuild src/index.js --bundle --watch --sourcemap --asset-names=[dir]/[name] --loader:.woff2=file --outfile=app.js",
+        "build": "esbuild src/index.js --bundle --minify --asset-names=[dir]/[name] --loader:.woff2=file --outfile=app.js"
+    },
+    "devDependencies": {
+        "esbuild": "^0.14.39",
+        "prettier": "^2.6.2"
+    },
+    "dependencies": {
+        "hyperapp": "^2.0.22",
+        "hyperdev": "^1.0.2",
+        "image-compare-viewer": "^1.5.0",
+        "luminous-lightbox": "^2.4.0",
+        "macy": "^2.5.1"
+    }
+}
