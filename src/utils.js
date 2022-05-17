@@ -79,7 +79,7 @@ const setup = (dispatch, props) => {
         });
 
         new LuminousGallery(document.querySelectorAll('.gallery'), null, { showCloseButton: false });
-    }, 0);
+    }, 100);
 
     return () => {};
 };
